@@ -2203,6 +2203,7 @@ div[slider] > input[type="range"]::-ms-tooltip {
   padding: 30px 0;
 }
 .block_wizzard2 {
-  width: 620px;
+  width: 100%;
   margin-top: -200px;
+  box-sizing: border-box;
 }
