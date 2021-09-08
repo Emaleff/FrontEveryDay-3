@@ -1,0 +1,228 @@
+.calendar__block {
+  width: 500px;
+  height: 500px;
+}
+:root {
+  --salmon: #fb6542;
+  --blue: #375e97;
+  --lemon: #ffbb00;
+  font-family: Inter-regular, sans-serif;
+}
+.pika-single {
+  font-family: Inter-regular, sans-serif;
+}
+.pika-single.is-hidden {
+  display: none;
+}
+
+.is-inrange .pika-button,
+.pika-button:hover {
+  border-color: var(--salmon);
+  background-color: rgba(254, 74, 73, 0.2);
+  color: #000;
+}
+
+.is-startrange .pika-button,
+.is-selected .pika-button {
+  border-color: var(--salmon);
+  background-color: var(--salmon);
+}
+
+.pika-table {
+  width: 100%;
+}
+
+.pika-table th {
+  font-size: 11px;
+  padding-bottom: 8px;
+}
+
+.pika-table td {
+  padding-top: 14.5%;
+  position: relative;
+  width: 14.25%;
+}
+
+.pika-single button {
+  border: solid 1px #ddd;
+  display: inline-block;
+  padding: 0;
+}
+
+.pika-button {
+  cursor: pointer;
+  height: 100%;
+  vertical-align: middle;
+  position: absolute;
+  top: 4px;
+  width: 100%;
+}
+
+.pika-title {
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 32px;
+  margin-bottom: 8px;
+}
+
+.pika-title .pika-label {
+  padding-left: 8px;
+}
+
+.pika-title button {
+  padding: 8px;
+  position: absolute;
+  top: 0;
+}
+
+.pika-title .pika-prev {
+  left: 4px;
+}
+
+.pika-title .pika-next {
+  right: 4px;
+}
+
+.pika-select {
+  display: none;
+}
+
+.pika-lendar {
+  padding: 8px;
+}
+
+.calendar__start-wrapper {
+  border: solid var(--lemon) 2px;
+}
+
+.calendar__end-wrapper {
+  border: solid var(--salmon) 2px;
+}
+
+.calendar {
+  background-color: var(--blue);
+  padding: 16px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
+
+.calendar__pikaday {
+  background-color: white;
+}
+
+.calendar__reset {
+  cursor: pointer;
+  margin: 8px 0;
+  padding: 16px;
+  background-color: var(--lemon);
+  border: solid 1px var(--lemon);
+  color: #222;
+  font-size: 14px;
+  outline: none;
+}
+
+.calendar__reset:hover {
+  background-color: #ffcc00;
+}
+
+button.is-disabled,
+.is-disabled .pika-button {
+  color: #ccc;
+  cursor: none;
+  border: solid 1px #eeeeee;
+}
+
+.calendar__input {
+  padding: 16px 8px;
+  margin: 4px 0;
+  flex-basis: 0;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.calendar__input:first-child {
+  margin-right: 4px;
+}
+
+.calendar__inputs {
+  display: flex;
+  width: 100%;
+}
+
+.calendar__inputs {
+  display: none;
+}
+.calendar__reset {
+  display: none;
+}
+
+.calendar {
+  background: transparent;
+}
+.calendar__end-wrapper {
+  border: 0;
+}
+.pika-title {
+  background: rgba(24, 160, 251, 0.1);
+  width: 197px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+.pika-label {
+  background: transparent;
+}
+.calendar__start-wrapper {
+  border: 0;
+}
+.pika-single button {
+  border: 0;
+}
+.pika-button.pika-day {
+  text-align: center;
+  background-color: transparent;
+}
+.is-disabled .pika-button {
+  opacity: 1;
+  color: #000;
+  border: 0;
+}
+
+.is-inrange .pika-button {
+  background-color: rgba(24, 160, 251, 0.2);
+  border-top: 5px solid white;
+  border-bottom: 5px solid transparent;
+  /* border: 0; */
+  border-left: 0;
+  border-right: 0;
+  box-sizing: border-box;
+}
+.is-startrange .pika-button,
+.is-endrange .pika-button {
+  background: #18a0fb;
+  /* position: relative; */
+  border-radius: 50%;
+  height: 120%;
+  width: 120%;
+  border: 0;
+  top: 2px;
+  left: -4px;
+  z-index: 1;
+}
+.is-startrange .pika-button::before,
+.is-endrange .pika-button::before {
+  content: "";
+  position: absolute;
+}
+.pika-lendar {
+  width: 227px;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

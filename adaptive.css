@@ -1,0 +1,151 @@
+@media screen and (max-width: 768px) {
+  .table-title {
+    display: block;
+    margin: 0px auto;
+  }
+  .table1 td {
+    text-align: right;
+  }
+  table.table1 {
+    width: 100%;
+  }
+  /* Force table to not be like tables anymore */
+  .table1,
+  .table1 thead,
+  .table1 tbody,
+  .table1 th,
+  .table1 td,
+  .table1 tr {
+    display: block;
+  }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  .table1 thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .table1 tr {
+    border: 1px solid #ccc;
+  }
+  .table1 td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  .table1 td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    text-align: left;
+    white-space: nowrap;
+    /* Label the data */
+    content: attr(data-column);
+    color: #000;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 655px) {
+  .wizzard1 li {
+    margin: 0 20px;
+  }
+  .wizzard1 li:first-child {
+    margin: -2px 20px;
+    vertical-align: middle;
+  }
+  .wizzard1 .active::before {
+    top: 6px;
+    width: 50px;
+    left: -50px;
+    z-index: 1;
+  }
+  .wizzard1.wizzard3 li::before {
+    left: -50px;
+    width: 50px;
+  }
+  .wizzard1.wizzard3 li.active::before {
+    width: 50px;
+  }
+  .wizzard3 li.active::after {
+    width: 50px;
+    left: -50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .wizzard3 {
+    margin-top: 50px;
+  }
+  .wizzard2 {
+    width: 400px;
+    margin-left: -100px;
+    margin-top: 380px;
+  }
+  .form_radio_btn2,
+  .form_radio_btn2 label {
+    width: 100px;
+  }
+  .form_radio_btn3 label,
+  .form_radio_btn3 {
+    width: 70px;
+  }
+  .arrows li {
+    display: block;
+    padding: 0px 10px;
+    margin-top: 10px;
+  }
+  .arrows li::before,
+  .arrows li::after {
+    right: 50%;
+  }
+  .breadcrumb li:last-child a {
+    padding-right: 20px;
+  }
+  .breadcrumb li a {
+    padding-left: 35px;
+  }
+  .breadcrumb li:first-child a {
+    padding-left: 20px;
+    padding-right: 5px;
+  }
+  .current-tab,
+  .current-tab2,
+  .current-tab3,
+  .current-tab4,
+  .current-tab5,
+  .current-tab6 {
+    font-size: 12px;
+  }
+  .current-tab4 {
+    padding: 5px;
+  }
+  .tabs6-block {
+    padding: 7px;
+  }
+  ol,
+  ul {
+    padding-left: 0;
+  }
+  .paginationMaxNumber {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .alert_hard,
+  .alert_max,
+  .alert_min {
+    width: 280px;
+  }
+  .paginationSelect {
+    display: none;
+  }
+  .table1 td {
+    padding-left: 90px;
+  }
+}
