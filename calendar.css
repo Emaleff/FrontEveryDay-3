@@ -226,9 +226,7 @@ button.is-disabled,
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.pika-button:hover {
-  color: #fff;
-}
+
 
 .is-selected .pika-button,
 .has-event .pika-button {
