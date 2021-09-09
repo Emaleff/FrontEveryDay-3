@@ -227,3 +227,34 @@ function setProgress(percent) {
 setProgress(69);
 
 
+const tabs1 = document.querySelectorAll("[data-tab1-target]");
+tabs1.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    tabs1.forEach((tab) => tab.classList.remove("active"));
+    tab.classList.add("active");
+  });
+});
+
+const tabs2 = document.querySelectorAll("[data-tab2-target]");
+tabs2.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    tabs2.forEach((tab) => tab.classList.remove("active"));
+    tab.classList.add("active");
+  });
+});
+
+const tabs3 = document.querySelectorAll("[data-tab3-target]");
+tabs3.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    tabs3.forEach((tab) => tab.classList.remove("active"));
+    tab.classList.add("active");
+  });
+});
+
+const tabs4 = document.querySelectorAll("[data-tab4-target]");
+tabs4.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    tabs4.forEach((tab) => tab.classList.remove("active"));
+    tab.classList.add("active");
+  });
+}); 

@@ -105,6 +105,12 @@ body {
   border-radius: 4px;
   outline: 0;
   padding: 10px 16px;
+  font-family: Inter-regular,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  /* color: #2C2C2C;   */
 }
 
 .checkbox {
@@ -2203,7 +2209,43 @@ div[slider] > input[type="range"]::-ms-tooltip {
   padding: 30px 0;
 }
 .block_wizzard2 {
+  max-width: 670px;
   width: 100%;
   margin-top: -200px;
   box-sizing: border-box;
+}
+
+.tabs-block1 {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0;
+}
+.tabs-block2 {
+  border-bottom: 1px solid #000;
+}
+.tab1 {
+  font-family: Inter-regular, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2c2c2c;
+  padding: 10px 6px;
+  margin: 0 11px;
+}
+.tab1:first-child {
+  margin-left: 0;
+}
+.tab1 svg {
+  margin-right: 8px;
+  stroke: #2c2c2c;
+  /* fill: #2c2c2c; */
+}
+.tabs-block1 .active {
+  color: #18a0fb;
+  box-shadow: 0px 2px 0px #18a0fb;
+}
+.active svg {
+  stroke: #18a0fb;
 }
